@@ -329,7 +329,7 @@ const TypeBox = ({
     // keydown count for KPM calculations to all types of operations
     if (status === "started") {
       setRawKeyStrokes(rawKeyStrokes + 1);
-      if (keyCode >= 65 && keyCode <= 90) {
+      if (keyCode !== 20 && keyCode !== 16 && keyCode !== 17 && keyCode !== 18 && keyCode !== 9 && keyCode !== 32 && keyCode !== 8) {
         setWpmKeyStrokes(wpmKeyStrokes + 1);
       }
     }
