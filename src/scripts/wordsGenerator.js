@@ -39,7 +39,7 @@ const wordsGenerator = (wordsCount, difficulty, languageMode) => {
     if (difficulty === SYMBOL_DIFFICULTY) {
       const words = [];
       for (let i = 0; i < wordsCount; i++) {
-        const word = generateRandomSymbolChras(2, 7);
+        const word = generateRandomSymbolChras(2, 5);
         words.push({ key: word, val: word });
       }
       return words;
